@@ -1,7 +1,18 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f2f0;
+}
+
+.dark {
+  background-color: #232326;
+  color: #f3f2f0;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .nav {
@@ -11,13 +22,25 @@
 }
 
 .nav-link {
+  text-decoration: none;
+  color: #f3f2f0;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  color: #d40000;
 }
 
 .photo {
+  margin-bottom: 120px;
+  width: 100%;
 }
 
 .name {
+  font-size: 28px;
 }
 
 .title-h1 {
+  font-size: 74px;
+  text-transform: uppercase;
 }
