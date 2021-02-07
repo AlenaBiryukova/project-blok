@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="dark">
+    
     <div class="wrapper">
         <header>
             <nav>
@@ -22,7 +23,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">Обратная связь</a></li>
                 </ul>
             </nav>
-            <ul class="nav">
+            <ul class="nav nav-info">
                 <li class="nav-item"><a class="nav-link" href="tel:+79237777777">8 923 777-77-77</a></li>
                 <li class="nav-item"><a class="nav-link" href="mailto:alexdev@gmail.com">alexdev@gmail.com</a></li>
             </ul>
@@ -31,15 +32,63 @@
         <img class="photo" src="/img/photo.png" alt="photo">
     
         <main>
+            <svg class="circle circle-main" viewBox="0 0 253 253" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="126.5" cy="126.5" r="126.5"/>
+            </svg>
+
+            <svg class="triangle" width="66" height="72" viewBox="0 0 66 72" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33 0L65.909 71.25H0.0910339L33 0Z"/>
+            </svg>
+
             <div>
                 <p class="name">Александр Антропов</p>
                 <h1 class="title-h1">web-разработчик</h1>
             </div>
+
+            <div class="social">
+                <div class="social-item">
+                    <p class="project">
+                        <span>Обсудить проект</span>
+                        <span class="project-img"></span>
+                    </p>
+                </div>
+                <div class="social-item">
+                    <svg class="circle circle-social" viewBox="0 0 253 253" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="126.5" cy="126.5" r="126.5" />
+                    </svg>
+
+                    <ul class="nav nav-info">
+                        <li class="nav-item"><a class="nav-link" href="#" target="_blank">Vk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" target="_blank">Instagram</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="slill-item">
+                    <h3 class="title-h3">FRONT-END</h3>
+                    <p class="discription">HTML+CSS+JS кодирование дизайнов любой сложности</p>
+                </div>
+                <div class="slill-item">
+                    <h3 class="title-h3">Back-end</h3>
+                    <p class="discription">Разработка сложной back-end логики для готового front-end</p>
+                </div>
+                <div class="slill-item">
+                    <h3 class="title-h3">WORDPRESS</h3>
+                    <p class="discription">Разработка сайтов - от блога до интернет магазина </p>
+                </div>
+                <div class="slill-item">
+                    <h3 class="title-h3">SEO продвижение</h3>
+                    <p class="discription">Качественное улучшение позиций сайта в поисковой выдаче</p>
+                </div>
+            </div>
+
         </main>
     </div>
     
     <footer></footer>
-    
+
 </div>
 </body>
 </html>

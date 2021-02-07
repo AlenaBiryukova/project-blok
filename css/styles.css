@@ -1,11 +1,41 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: #f3f2f0;
+  font-size: 14px;
 }
 
 .dark {
   background-color: #232326;
   color: #f3f2f0;
+}
+
+.dark .nav-link {
+  color: #f3f2f0;
+}
+
+.dark .circle circle {
+  fill: #d40000;
+}
+
+.dark .triangle path {
+  fill: #ffffff;
+}
+
+.light {
+  background-color: #f3f2f0;
+  color: #010101;
+}
+
+.light .nav-link {
+  color: #010101;
+}
+
+.light .circle circle {
+  fill: #ffffff;
+}
+
+.light .triangle path {
+  fill: #d40000;
 }
 
 .wrapper {
@@ -15,10 +45,31 @@ body {
   padding-right: 15px;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
 .nav {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
 }
 
 .nav-item {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.nav-item:first-child {
+  padding-left: 0;
+}
+
+.nav-item :last-child {
+  padding-right: 0;
 }
 
 .nav-link {
@@ -28,6 +79,25 @@ body {
 
 .nav-link:hover {
   color: #d40000;
+}
+
+.nav-info .nav-item {
+  position: relative;
+}
+
+.nav-info .nav-item::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 24px;
+  background-color: rgba(243, 242, 240, 0.5);
+  position: absolute;
+  left: 0;
+  top: calc(50%-12px);
+}
+
+.nav-info .nav-item:first-child::before {
+  display: none;
 }
 
 .photo {
@@ -42,4 +112,62 @@ body {
 .title-h1 {
   font-size: 74px;
   text-transform: uppercase;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding-bottom: 60px;
+}
+
+.social-item {
+}
+
+.project {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.project-img {
+  width: 16px;
+  height: 12px;
+  display: block;
+  background-image: url(../img/arrow-white.svg);
+  margin-left: 15px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slill-item {
+  flex: 0 0 24%;
+}
+
+.title-h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.skill .title-h3 {
+  text-transform: uppercase;
+}
+
+.skill .discription {
+  line-height: 150%;
+}
+
+.circle-main {
+  height: 253px;
+  width: 253px;
+}
+
+.circle-social {
+  height: 106px;
+  width: 106px;
 }
